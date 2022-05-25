@@ -4,8 +4,8 @@ func reverse(input []int64) (result []int64) {
 
 	var reversedSlice []int64
 
-	for i := len(input); i > 0; i-- {
-		reversedSlice = append(reversedSlice, input[i])
+	for _, i := range input {
+		reversedSlice = append(reversedSlice, input[int64(len(input))-i])
 	}
 
 	return reversedSlice
