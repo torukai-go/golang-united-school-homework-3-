@@ -1,11 +1,11 @@
-package homework
+package main
 
 func reverse(input []int64) (result []int64) {
 
 	var reversedSlice []int64
 
-	for _, i := range input {
-		reversedSlice = append(reversedSlice, input[int64(len(input))-i])
+	for i := len(input) - 1; i >= 0; i-- {
+		reversedSlice = append(reversedSlice, input[i])
 	}
 
 	return reversedSlice

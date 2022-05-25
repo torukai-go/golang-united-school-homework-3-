@@ -1,4 +1,4 @@
-package homework
+package main
 
 func average(input [15]float32) (result float32) {
 	var a float32
